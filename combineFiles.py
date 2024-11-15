@@ -2,8 +2,8 @@ import os
 import shutil
 
 # Paths to the source folder (with PDFs) and target folder
-source_folder = r"X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Other\2023\07 pdf"
-destination_folder= r"X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Other\2023\07"
+source_folder = r"X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Other\2023\08 pdf"
+destination_folder= r"X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Other\2023\08"
 
 # Counter for the moved folders
 moved_count = 0

@@ -2,8 +2,8 @@ import os
 import shutil
 
 # Set the paths to your folders
-project_folder_with_mp4s = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\JEFFCO - JUNE 2023'
-project_folder_path = r'X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\NoMP4\2023\06'
+project_folder_with_mp4s = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\JEFFCO - AUGUST 2023\Task orders'
+project_folder_path = r'X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\NoMP4\2023\08'
 
 # Counter to keep track of how many files were copied
 copied_files_count = 0
