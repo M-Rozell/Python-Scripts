@@ -3,8 +3,8 @@ import shutil
 import pandas as pd
 
 # Define the path to the Excel file and the root project folder
-excel_file = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\06\ErrorLog.xlsx'
-project_root = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\06\Other'
+excel_file = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\05\Errors_May_2022.xlsx'
+project_root = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\05\Other'
 
 # Load the Excel file into a DataFrame
 df = pd.read_excel(excel_file, header=0)
