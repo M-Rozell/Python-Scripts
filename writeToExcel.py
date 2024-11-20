@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Specify the path to the parent project directory
-parent_folder_path = r"X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Other\2023\08"
+parent_folder_path = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\07\Other"
 
 # Get a list of all folder names in the parent directory
 folder_names = [name for name in os.listdir(parent_folder_path) if os.path.isdir(os.path.join(parent_folder_path, name))]

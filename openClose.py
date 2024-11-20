@@ -2,12 +2,12 @@ import os
 import subprocess
 
 # Set the path to your project folder
-project_folder = r"C:\Users\MaggieRozell\Desktop\Trash\Actual Trash\open_close"
+project_folder = r"C:\Users\MaggieRozell\Desktop\Trash\Actual Trash\open_close\Practice file"
 
 # Loop through each subfolder and process .ptdx files
 for root, dirs, files in os.walk(project_folder):
     for file in files:
-        if file.endswith(".ptdx"):
+        if file.endswith(".ptdX"):
             file_path = os.path.join(root, file)
             print(f"Processing file: {file_path}")
             
