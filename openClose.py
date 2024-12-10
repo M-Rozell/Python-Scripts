@@ -7,7 +7,7 @@ project_folder = r"C:\Users\MaggieRozell\Desktop\Trash\Actual Trash\open_close\P
 # Loop through each subfolder and process .ptdx files
 for root, dirs, files in os.walk(project_folder):
     for file in files:
-        if file.endswith(".ptdX"):
+        if file.endswith(".pdf"):
             file_path = os.path.join(root, file)
             print(f"Processing file: {file_path}")
             

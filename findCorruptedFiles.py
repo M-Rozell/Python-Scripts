@@ -40,6 +40,6 @@ def find_and_move_corrupted_folders(root_folder, target_folder):
         print(f"Folder move complete. Total folders moved: {moved_count}")
 
 # Specify your root folder path and target folder path
-root_folder = r'X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\NoMP4\2023\08'
-target_folder = r'X:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Other\2023\Corrupted'
+root_folder = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\07\Other'
+target_folder = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2022\07\Duplicates'
 find_and_move_corrupted_folders(root_folder, target_folder)

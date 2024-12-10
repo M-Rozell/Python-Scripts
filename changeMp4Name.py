@@ -38,6 +38,17 @@ def validate_and_modify_ptdx(folder_path):
                         else:
                             print(f"Missing required tags in {ptdx_file_path}")
 
+                    # Process <Media_002> elements to update <Media_URI>
+                    for media in root_element.findall(".//Media_002"):
+                        media_uri = media.find("Media_URI")
+                        if media_uri is not None:
+                            original_uri = media_uri.text
+                            # Remove "_V_Post" and fix the space in numbers
+                            updated_uri = original_uri.replace("_V_Post", "").replace(" ", "")
+                            if updated_uri != original_uri:
+                                print(f"Updating Media_URI in {ptdx_file_path} from {original_uri} to {updated_uri}")
+                                media_uri.text = updated_uri
+
                     # Save the updated tree back to the original .ptdx file
                     tree.write(ptdx_file_path, encoding="utf-8", xml_declaration=True)
                     print(f"Updated and saved: {ptdx_file_path}")
@@ -47,5 +58,5 @@ def validate_and_modify_ptdx(folder_path):
                     print(f"Unexpected error processing {ptdx_file_path}: {ex}")
 
 # Replace 'your_project_folder_path' with your actual project folder path
-project_folder = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\03\Inspectons"  # Example: "C:/Projects/YourProjectFolder"
+project_folder = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\03\Other"  # Example: "C:/Projects/YourProjectFolder"
 validate_and_modify_ptdx(project_folder)

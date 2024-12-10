@@ -1,7 +1,7 @@
 import os
 
 # Replace this with the folder containing your PDF files
-folder_path = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\JEFFCO - SEPTEMBER 2023\TASK ORDER 20 WITH DATABASE\_U_"  # Use the appropriate path on your system
+folder_path = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\09\pdf"  # Use the appropriate path on your system
 
 count = 0
 
@@ -12,9 +12,9 @@ else:
     # Loop through all files in the folder
     for file_name in os.listdir(folder_path):
         # Check if the file ends with "_D_D_Post.pdf"
-        if file_name.endswith("_Upstream"):
+        if file_name.endswith("_D_Post.pdf"):
             # Create the new file name
-            new_name = file_name.replace("_Upstream", "_U_Post")
+            new_name = file_name.replace("_D_Post.pdf", "_Downstream.pdf")
             # Build full paths
             old_path = os.path.join(folder_path, file_name)
             new_path = os.path.join(folder_path, new_name)
