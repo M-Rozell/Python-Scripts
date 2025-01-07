@@ -2,8 +2,8 @@ import os
 import shutil
 
 # Define the path to the main project folder and the custom "NoMP4" folder
-project_folder = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\10\Inspections'
-no_mp4_folder = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\10\New folder'
+project_folder = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2024\02\Other'
+no_mp4_folder = r'Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2024\02\New folder'
 
 # Create the "NoMP4" folder if it doesn't exist
 os.makedirs(no_mp4_folder, exist_ok=True)
@@ -15,7 +15,7 @@ for folder_name in os.listdir(project_folder):
     # Check if it's a directory (folder)
     if os.path.isdir(folder_path):
         # Get a list of MP4 files in the folder
-        mp4_files = [f for f in os.listdir(folder_path) if f.endswith('.mp4')]
+        mp4_files = [f for f in os.listdir(folder_path) if f.endswith('.pdf')]
         
         # If there are no MP4 files, move the folder to the "NoFile" folder
         if len(mp4_files) == 0:

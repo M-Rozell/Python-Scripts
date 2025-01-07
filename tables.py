@@ -10,7 +10,7 @@ def check_if_pdf_has_tables(pdf_file):
     return False
 
 # Example usage
-pdf_path = r"C:\Users\MaggieRozell\Desktop\Trash\Actual Trash\GP002012-017247_20220526_1525_Downstream.pdf"
+pdf_path = r"C:\Users\MaggieRozell\Desktop\Trash\Ratings\GP009040-089719_20240611_1202_Downstream.pdf"
 if check_if_pdf_has_tables(pdf_path):
     print("The PDF likely contains tables.")
 else:

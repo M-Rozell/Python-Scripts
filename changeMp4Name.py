@@ -58,5 +58,5 @@ def validate_and_modify_ptdx(folder_path):
                     print(f"Unexpected error processing {ptdx_file_path}: {ex}")
 
 # Replace 'your_project_folder_path' with your actual project folder path
-project_folder = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\03\Other"  # Example: "C:/Projects/YourProjectFolder"
+project_folder = r"Z:\017560-12 - JEFFCO 2022 AMP08 - MAINLINE\Upgrade\2023\09\Other"  # Example: "C:/Projects/YourProjectFolder"
 validate_and_modify_ptdx(project_folder)
